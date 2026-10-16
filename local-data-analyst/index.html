@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local AI Data Analyst</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Local AI Data Analyst</h1>
+    <p>Upload a CSV, then ask questions about its data.</p>
+
+    <section class="upload">
+      <input id="csv-file" type="file" accept=".csv">
+      <button id="upload-button">Upload CSV</button>
+      <span id="upload-status"></span>
+    </section>
+
+    <section id="profile" class="profile">
+      Upload a CSV to see its preview.
+    </section>
+
+    <section id="chat" class="chat"></section>
+
+    <form id="chat-form">
+      <input
+        id="message-input"
+        placeholder="Ask about your dataset..."
+        autocomplete="off"
+        required
+      >
+      <button id="send-button">Send</button>
+      <button id="reset-button" type="button">New chat</button>
+    </form>
+
+    <div id="status" class="status">Upload a CSV to begin.</div>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
